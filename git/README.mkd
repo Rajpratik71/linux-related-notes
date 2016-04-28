@@ -305,6 +305,16 @@ $ git diff --name-only
 
 ### git pull
 
+### git fetch 
+
+删除远程已经身处的分支
+
+```
+$git fetch -p 
+$git fetch --prune
+```
+
+
 ### git push
 
 ### git rebase
