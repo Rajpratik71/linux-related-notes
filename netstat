@@ -1,7 +1,0 @@
-# see all daemons and the TCP ports they are listening on
-netstat -ntlp
-
-netstat -nlp
-
-# list all listening sockets
-netstat -xl
