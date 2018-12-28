@@ -1,0 +1,24 @@
+What is a socket in TCP/IP ?
+- A socket is just a logical endpoint for communication. They exist on the transport layer. 
+- You can send and receive things on a socket, you can bind and listen to a socket. 
+- A socket is specific to a protocol, machine, and port, and is addressed as such in the header of a packet.
+-  is a means of two way ("duplex") communication, that means you can write to and read from the same socket, 
+ and you do not need two separate sockets for a two-way communication.
+-  are one possible way of inter-process communication (shared memory and pipes being examples of alternatives)
+- At the same time, they are being used for "networking",
+- For udp or tcp over IP, a socket address is the combination of an IP address and a port number.
+- A socket can have a LISTEN state or an ESTABLISHED state
+- A socket is a window between your server/operating system that serves you and the inter net
+
+netstat -xl
+
+ss -x state listening
+
+What is a socket file in linux?
+- A socket is a special file used for inter-process communication. These enable communication between two processes. 
+- In addition to sending data, processes can send file descriptors across a Unix domain socket connection using the sendmsg() 
+- and recvmsg() system.
+- are one possible way of inter-process communication (shared memory and pipes being examples of alternatives)
+
+# list all sockets on your machine
+find / -typs s
